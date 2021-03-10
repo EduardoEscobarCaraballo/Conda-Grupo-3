@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{%load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="{%static "css/estilos.css" %}"/>
+</head>
+
+<body>
+    <div class="cabecera">
+        <div class="fotoUsuario">
+            <img src="{% static "images/Cartujo.png" %}" width="50px" height="50px" style="border-radius: 50%;">
+        </div>
+        <div class="usuario">
+            {{ usuario_var }}
+        </div>
+        <div class="ubicacion">
+            {{ usuario }}
+        </div>
+    </div>
+    <div class="imagen">
+        <img src="{% static "images/baltasar.jpg" %}" width="500px" height="350px">
+    </div>
+    <div class="info">
+        <div class="likes">
+            {{ likes }}
+        </div>
+        <div class="caption">
+            Comentario: <b>{{ caption }}</b>
+        </div>
+    </div>
+
+    <br/>
+
+    <input type="text" id="fname" name="fname" placeholder="Comentario">
+
+    <div class="boton">
+        <button type="button">Enviar</button>
+    </div>  
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="{%static "css/estilos.css" %}"/>
+</head>
+
+<body>
+    <div class="cabecera">
+        <div class="fotoUsuario">
+            <img src="{% static "images/Cartujo.png" %}" width="150px" height="150px" style="border-radius: 50%;">
+        </div>
+        <div class="usuarioCambiar">
+            <div class="boton">
+                <button type="button">Cambiar imagen de perfil.</button>
+            </div> 
+        </div>
+        <div class="ubicacion">
+            {{ usuario }}
+        </div>
+    </div>
+    <div class="imagen">
+        <p>Nombre</p>
+        {{ usuario_var }}
+        <div class="boton">
+            <button type="button">Cambiar nombre.</button>
+        </div>
+        <br/>
+
+        <p>Descripcion</p>
+        {{ descripcion }}
+        <div class="boton">
+            <button type="button">Cambiar descripcion.</button>
+        </div> 
+        <br/>
+    </div>  
+</body>
+
+</html>

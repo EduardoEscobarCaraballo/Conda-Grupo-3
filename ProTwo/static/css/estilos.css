@@ -1,0 +1,8 @@
+.cabecera{
+    border:2px solid black;
+    display:flex;
+}
+
+.usuarioCambiar{
+    font-size: large;
+}
